@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <form class="form">
+  <form class="form js-speaker-form">
     <h2 class="title">Full Name <span class="title-star">*</span></h2>
 
-    <div class="form-field row">
+    <div class="form-field row ">
 
       <div class="form-small column">
         <input class="form-input" type="text" name="fname" id="fname">
@@ -80,6 +81,19 @@
     </div>
 
   </form>
+
+  <script>
+    (() => {
+      document.
+        querySelector('.js-speaker-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+        });
+    })()
+  </script>
 </body>
 
 </html>

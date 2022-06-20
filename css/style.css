@@ -1,27 +1,46 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .form{
   width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
 }
+
 .title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.42;
+
   padding: 0;
   margin: 0;
   margin-bottom: 5px;
   color: #2c2c2c;
+  
 }
 
 .title-star {
+
+  
   color: red;
 }
 
 .form-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
   padding: 10px 10px;
   border: 1px solid #bdbebd;
   border-radius: 5px;
 }
 
 .form-lbl {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+
   margin-top: 5px;
   color: #949494;
 }
@@ -34,6 +53,11 @@
 }
 
 .btn {
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  
   cursor: pointer;
   display: inline-block;
   padding: 15px 40px;
@@ -42,6 +66,14 @@
   border: 1px solid green;
   border-radius: 5px;
   margin-left: 20px;
+}
+
+.btn:hover,
+.btn:focus{
+  color: red;
+  border: 1px solid red;
+  background: gainsboro;
+  transition: all 250ms linear;
 }
 
 .form-small{
@@ -62,5 +94,4 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
